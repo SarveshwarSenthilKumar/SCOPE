@@ -63,7 +63,6 @@
                             <li><a class="dropdown-item" href="#" onclick="shareDocumentation()"><i class="bi bi-share me-2"></i>Share</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="https://github.com/SarveshwarSenthilKumar/Engineering-Idol" target="_blank" onclick="openGitHub()"><i class="bi bi-github me-2"></i>GitHub Repository</a></li>
-                            <li><a class="dropdown-item" href="http://localhost:5000" target="_blank" onclick="openWebApp()"><i class="bi bi-box-arrow-up-right me-2"></i>Launch SCOPE App</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -90,12 +89,9 @@
                     <div class="d-flex gap-3 flex-wrap">
                         <a href="#overview" class="btn btn-light btn-lg">Get Started</a>
                         <a href="#advanced" class="btn btn-outline-light btn-lg">View Features</a>
-                        <button class="btn btn-outline-light btn-lg" onclick="showQuickGuide()">
+                        <button class="btn btn-outline-primary btn-sm">
                             <i class="bi bi-question-circle me-2"></i>Quick Guide
                         </button>
-                        <a href="http://localhost:5000" target="_blank" class="btn btn-success btn-lg" onclick="openWebApp()">
-                            <i class="bi bi-box-arrow-up-right me-2"></i>Launch SCOPE App
-                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -142,10 +138,7 @@
                 <div class="col-12 text-center">
                     <div class="alert alert-success d-inline-block">
                         <h5 class="alert-heading"> Ready to Experience SCOPE?</h5>
-                        <p class="mb-3">Launch the live SCOPE web application to see the system in action with real-time monitoring, interactive dashboards, and AI-powered analytics.</p>
-                        <a href="http://localhost:5000" target="_blank" class="btn btn-success btn-lg" onclick="openWebApp()">
-                            <i class="bi bi-box-arrow-up-right me-2"></i>Launch SCOPE Application
-                        </a>
+                        <p class="mb-3">Explore the comprehensive documentation to learn about SCOPE's advanced environmental monitoring and threat detection capabilities.</p>
                     </div>
                 </div>
             </div>
@@ -2856,9 +2849,6 @@ class ExternalAPIManager:
             </button>
             <button class="fab-option" onclick="shareDocumentation()" title="Share">
                 <i class="bi bi-share"></i>
-            </button>
-            <button class="fab-option webapp-btn" onclick="openWebApp()" title="Launch SCOPE App">
-                <i class="bi bi-box-arrow-up-right"></i>
             </button>
         </div>
     </div>

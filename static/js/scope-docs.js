@@ -942,7 +942,6 @@ window.ScopeDocs = {
     toggleFullscreen,
     downloadPDF,
     shareDocumentation,
-    openWebApp,
     openGitHub
 };
 
@@ -1139,33 +1138,6 @@ function downloadPDF() {
     fabMain.classList.remove('active');
 }
 
-/**
- * Open SCOPE Web App
- */
-function openWebApp() {
-    const webAppUrl = 'http://localhost:5000';
-    
-    // Check if the web app is running
-    fetch(webAppUrl, { method: 'HEAD', mode: 'no-cors' })
-        .then(() => {
-            // Open in new tab
-            window.open(webAppUrl, '_blank');
-            showNotification('Opening SCOPE Web App...', 'success', 2000);
-        })
-        .catch(() => {
-            // If fetch fails, still try to open (might be CORS issue)
-            window.open(webAppUrl, '_blank');
-            showNotification('Opening SCOPE Web App...', 'info', 2000);
-        });
-    
-    // Close FAB menu if called from there
-    const fabOptions = document.querySelector('.fab-options');
-    const fabMain = document.querySelector('.fab-main');
-    if (fabOptions && fabMain) {
-        fabOptions.classList.remove('show');
-        fabMain.classList.remove('active');
-    }
-}
 
 /**
  * Share Documentation
