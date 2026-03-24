@@ -1,6 +1,23 @@
-# SCOPE System
+<div align="center">
+  <img src="static/assets/logo.png" alt="SCOPE System" width="120" height="120">
+  <h1>SCOPE System</h1>
+  <p><strong>System for Comprehensive Observation and Protection of Environments</strong></p>
+  <p><em>Advanced environmental monitoring and threat detection system</em></p>
+  
+  ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+  ![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)
+  ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
+  
+  **Author:** Sarveshwar Senthil Kumar  
+  **Repository:** [SarveshwarSenthilKumar/SCOPE](https://github.com/SarveshwarSenthilKumar/SCOPE)
+  
+  ![GitHub stars](https://img.shields.io/github/stars/SarveshwarSenthilKumar/SCOPE?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/SarveshwarSenthilKumar/SCOPE?style=social)
+  ![GitHub issues](https://img.shields.io/github/issues/SarveshwarSenthilKumar/SCOPE)
+</div>
 
-System for Comprehensive Observation and Protection of Environments - Advanced environmental monitoring and threat detection system.
+---
 
 ## Quick Start
 
@@ -133,7 +150,27 @@ The comprehensive documentation includes:
 - Real-time Data: Live sensor monitoring and threat detection
 - Interactive Dashboard: Full system control and monitoring
 
-## System Statistics
+## 🌟 Key Features
+
+### Real-Time Monitoring
+- **Multi-Sensor Integration**: mmWave radar, air quality, noise, and motion sensors
+- **Live Data Streaming**: Real-time updates with Server-Sent Events
+- **Threat Detection**: AI-powered analysis with Google Gemini integration
+- **Environmental Monitoring**: Air quality, temperature, humidity tracking
+
+### Advanced Capabilities
+- **Scenario Simulation**: Training and testing environments
+- **Multi-Environment Support**: Monitor multiple zones simultaneously
+- **Automated Reporting**: AI-generated comprehensive reports
+- **Mobile Responsive**: Access from any device, anywhere
+
+### Professional Interface
+- **Modern Dashboard**: Interactive charts and real-time visualizations
+- **Dark Mode**: Eye-friendly interface for extended use
+- **Role-Based Access**: Secure user management system
+- **Search & Navigation**: Full-text search with keyboard shortcuts
+
+## 📊 System Statistics
 
 - 3,699+ Lines of production code
 - 70+ Database fields
@@ -144,4 +181,24 @@ The comprehensive documentation includes:
 
 ---
 
-**Note**: The documentation (`index.html`) is completely standalone and can be viewed without running the Flask server. The main SCOPE application (`app.py`) provides the live monitoring and threat detection capabilities.
+## 📞 Contact & Support
+
+**Author:** Sarveshwar Senthil Kumar  
+**Email:** [Contact via GitHub](https://github.com/SarveshwarSenthilKumar)  
+**Repository:** [SarveshwarSenthilKumar/SCOPE](https://github.com/SarveshwarSenthilKumar/SCOPE)  
+**Documentation:** [Live Documentation](./index.html)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <p><strong>🛡️ SCOPE System - Protecting Environments Through Advanced Technology 🛡️</strong></p>
+  <p><em>System for Comprehensive Observation and Protection of Environments</em></p>
+  
+  Made with ❤️ by Sarveshwar Senthil Kumar
+</div>
