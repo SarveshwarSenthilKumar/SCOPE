@@ -1,3 +1,20 @@
+<div align="center">
+  <img src="static/assets/logo.png" alt="SCOPE System" width="120" height="120">
+  <h1>SCOPE System</h1>
+  <p><strong>Comprehensive Feature Breakdown</strong></p>
+  <p><em>System for Comprehensive Observation and Protection of Environments</em></p>
+  
+  ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+  ![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)
+  ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
+  
+  **Author:** Sarveshwar Senthil Kumar  
+  **Repository:** [SarveshwarSenthilKumar/SCOPE](https://github.com/SarveshwarSenthilKumar/SCOPE)
+</div>
+
+---
+
 # SCOPE System - Comprehensive Feature Breakdown
 
 ## Table of Contents
@@ -5049,3 +5066,28 @@ The SCOPE System represents a comprehensive, enterprise-grade environmental moni
 The system demonstrates production-ready quality with extensive features, robust architecture, and comprehensive documentation suitable for deployment in educational facilities, corporate environments, or any setting requiring advanced environmental monitoring and threat detection capabilities.
 
 This comprehensive breakdown covers every aspect of the SCOPE system, from low-level hardware integration to high-level AI analytics, providing a complete understanding of the system's capabilities, architecture, and implementation details.
+
+---
+
+## 📞 Document Information
+
+**Author:** Sarveshwar Senthil Kumar  
+**Repository:** [SarveshwarSenthilKumar/SCOPE](https://github.com/SarveshwarSenthilKumar/SCOPE)  
+**Created:** March 2024  
+**Last Updated:** March 2024  
+**Version:** 1.0.0
+
+---
+
+## 📄 License
+
+This document and the SCOPE system are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <p><strong>🛡️ SCOPE System - Comprehensive Technical Documentation 🛡️</strong></p>
+  <p><em>System for Comprehensive Observation and Protection of Environments</em></p>
+  
+  Made with ❤️ by Sarveshwar Senthil Kumar
+</div>
