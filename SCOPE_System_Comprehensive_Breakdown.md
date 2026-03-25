@@ -432,14 +432,14 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### Maintenance & Support
 
-#### 🔧 Preventive Maintenance
+#### Preventive Maintenance
 - **Regular Calibration**: Scheduled sensor calibration for accuracy
 - **Cleaning Procedures**: Regular sensor cleaning to maintain performance
 - **Firmware Updates**: Keeping sensor software up to date
 - **Battery Replacement**: Proactive battery replacement for wireless sensors
 - **Performance Monitoring**: Continuous monitoring of sensor health
 
-#### 🚨 Troubleshooting & Support
+#### Troubleshooting & Support
 - **Remote Diagnostics**: Remote troubleshooting capabilities
 - **On-Site Support**: Rapid response for hardware issues
 - **Spare Parts**: Inventory of critical spare parts for quick replacement
@@ -448,13 +448,13 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### Cost-Benefit Analysis
 
-#### 💰 Initial Investment
+#### Initial Investment
 - **Hardware Costs**: Sensors, controllers, and installation equipment
 - **Installation Costs**: Professional installation and setup
 - **Training Costs**: Staff training and system familiarization
 - **Integration Costs**: Connection with existing building systems
 
-#### 📈 Long-Term Benefits
+#### Long-Term Benefits
 - **Reduced Security Costs**: Lower insurance premiums and reduced security staff needs
 - **Operational Efficiency**: Automated monitoring reduces manual inspection requirements
 - **Energy Savings**: Optimized HVAC and lighting based on occupancy
@@ -463,7 +463,7 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### Future Expansion Planning
 
-#### 🚀 Scalability Considerations
+#### Scalability Considerations
 - **Modular Design**: Easy addition of new sensors and monitoring areas
 - **System Integration**: Connection with future building management systems
 - **Technology Upgrades**: Path for upgrading to newer sensor technologies
@@ -636,7 +636,7 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### Real-World User Scenarios
 
-#### 🏫 School Administrator Daily Workflow
+#### School Administrator Daily Workflow
 - **Morning Briefing**: Review overnight system status and any incidents
 - **Live Monitoring**: Real-time observation of school safety and security
 - **Incident Response**: Immediate alerts and coordinated response to threats
@@ -644,7 +644,7 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 - **Parent Communication**: Transparent safety updates for school community
 - **Strategic Planning**: Data-driven decisions for security improvements
 
-#### 👮 Security Officer Operations
+#### Security Officer Operations
 - **Real-time Surveillance**: Continuous monitoring of all school areas
 - **Threat Assessment**: Immediate evaluation and response to security alerts
 - **Incident Documentation**: Detailed reporting of all security events
@@ -652,7 +652,7 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 - **Emergency Coordination**: Integration with first responders and emergency services
 - **Training Management**: Scenario-based training for emergency preparedness
 
-#### 🏢 Facility Manager Daily Tasks
+#### Facility Manager Daily Tasks
 - **Occupancy Monitoring**: Real-time space utilization tracking
 - **Energy Management**: HVAC and lighting optimization based on occupancy
 - **Maintenance Coordination**: Proactive maintenance based on sensor data
@@ -662,14 +662,14 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### Interactive Dashboard Features
 
-#### 📊 Real-time Monitoring Dashboard
+#### Real-time Monitoring Dashboard
 - **Threat Level Gauges**: Visual indicators with color-coded severity levels
 - **Environmental Metrics**: Live air quality, temperature, and humidity displays
 - **Occupancy Tracking**: Real-time people count and density visualization
 - **System Status**: Sensor connectivity and health monitoring
 - **Alert Panel**: Active alerts with recommended actions and response options
 
-#### 🎯 Actionable Insights
+#### Actionable Insights
 - **Trend Analysis**: Visual representation of historical data patterns
 - **Predictive Alerts**: Early warning system for potential issues
 - **Resource Optimization**: Recommendations for efficient resource allocation
@@ -678,14 +678,14 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### Mobile Optimization
 
-#### 📱 Mobile Device Features
+#### Mobile Device Features
 - **Responsive Design**: Optimized interface for smartphones and tablets
 - **Touch-Friendly Controls**: Large tap targets and gesture support
 - **Offline Capability**: Basic functionality available without internet connection
 - **Push Notifications**: Instant alerts for critical events on mobile devices
 - **Location-Aware Features**: Context-aware functionality based on user location
 
-#### 🔄 Cross-Platform Compatibility
+#### Cross-Platform Compatibility
 - **Web App Support**: Progressive web app functionality for mobile devices
 - **Native Integration**: Integration with mobile device features (camera, GPS)
 - **Offline Sync**: Data synchronization when connection restored
@@ -694,14 +694,14 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### User Experience Design
 
-#### 👥 User-Centered Design Principles
+#### User-Centered Design Principles
 - **Intuitive Navigation**: Clear information architecture and user flow
 - **Accessibility**: WCAG compliance for users with disabilities
 - **Multi-Language Support**: Internationalization for diverse user populations
 - **Customizable Interface**: Personalizable dashboards and layouts
 - **Contextual Help**: In-application guidance and documentation
 
-#### 🎨 Visual Design Elements
+#### Visual Design Elements
 - **Professional Aesthetics**: Clean, modern interface design
 - **Dark Mode Support**: Eye-friendly interface for extended use sessions
 - **Color-Coded Information**: Intuitive use of color for threat levels and status
@@ -710,14 +710,14 @@ SCOPE is an advanced environmental monitoring and threat detection system design
 
 ### Integration Capabilities
 
-#### 🔗 External System Integration
+#### External System Integration
 - **Building Management Systems**: HVAC, lighting, and security system integration
 - **Communication Platforms**: Email, SMS, and messaging app integration
 - **Emergency Services**: Direct connection to police, fire, and medical services
 - **Administrative Systems**: Student information systems and HR database integration
 - **Third-Party APIs**: Integration with external services and applications
 
-#### 📊 Data Integration and Analytics
+#### Data Integration and Analytics
 - **Real-time Data Synchronization**: Live data updates from multiple sources
 - **Historical Data Analysis**: Long-term trend identification and reporting
 - **Predictive Analytics**: AI-powered forecasting and recommendations
@@ -1648,9 +1648,10 @@ This breakdown serves as a complete reference for understanding, implementing, a
 - **Analysis Features**:
   - Sound pressure level (dB) measurement
   - FFT-based frequency analysis
-  - Spectral energy distribution
-  - Event classification (quiet, conversation, crowd, impact)
-  - Spike detection for sudden noises
+  - Spectral feature extraction (centroid, spread, skewness, kurtosis)
+  - ML-based event classification (Random Forest)
+  - Spike detection and rate-of-change analysis
+  - Baseline noise floor tracking
 
 ### Signal Processing Hardware
 
@@ -5079,15 +5080,15 @@ This comprehensive breakdown covers every aspect of the SCOPE system, from low-l
 
 ---
 
-## 📄 License
+## License
 
 This document and the SCOPE system are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
-  <p><strong>🛡️ SCOPE System - Comprehensive Technical Documentation 🛡️</strong></p>
+  <p><strong>SCOPE System - Comprehensive Technical Documentation</strong></p>
   <p><em>System for Comprehensive Observation and Protection of Environments</em></p>
   
-  Made with ❤️ by Sarveshwar Senthil Kumar
+  Made with dedication by Sarveshwar Senthil Kumar
 </div>

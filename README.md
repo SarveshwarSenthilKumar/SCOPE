@@ -150,7 +150,7 @@ The comprehensive documentation includes:
 - Real-time Data: Live sensor monitoring and threat detection
 - Interactive Dashboard: Full system control and monitoring
 
-## 🌟 Key Features
+## Key Features
 
 ### Real-Time Monitoring
 - **Multi-Sensor Integration**: mmWave radar, air quality, noise, and motion sensors
@@ -181,7 +181,7 @@ The comprehensive documentation includes:
 
 ---
 
-## 📞 Contact & Support
+## Contact & Support
 
 **Author:** Sarveshwar Senthil Kumar  
 **Email:** [Contact via GitHub](https://github.com/SarveshwarSenthilKumar)  
@@ -190,15 +190,15 @@ The comprehensive documentation includes:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
-  <p><strong>🛡️ SCOPE System - Protecting Environments Through Advanced Technology 🛡️</strong></p>
+  <p><strong>SCOPE System - Protecting Environments Through Advanced Technology</strong></p>
   <p><em>System for Comprehensive Observation and Protection of Environments</em></p>
   
-  Made with ❤️ by Sarveshwar Senthil Kumar
+  Made with dedication by Sarveshwar Senthil Kumar
 </div>
