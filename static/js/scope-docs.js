@@ -1240,12 +1240,13 @@ function updateScoringDisplay() {
     const threatBadgeEl = document.getElementById('threatBadge');
     const recommendationTextEl = document.getElementById('recommendationText');
     const recommendationBoxEl = document.getElementById('recommendationBox');
+    const recommendationDetailEl = document.getElementById('recommendationDetail');
     
     // Check if all elements exist before proceeding
     if (!peopleCountEl || !noiseLevelEl || !aqiLevelEl || !vocLevelEl || !pm25LevelEl ||
         !peopleValueEl || !noiseValueEl || !aqiValueEl || !vocValueEl || !pm25ValueEl ||
         !threatScoreEl || !peopleScoreEl || !pm25ScoreEl || !vocScoreEl || !aqiScoreEl || !noiseScoreEl ||
-        !threatBadgeEl || !recommendationTextEl || !recommendationBoxEl) {
+        !threatBadgeEl || !recommendationTextEl || !recommendationBoxEl || !recommendationDetailEl) {
         console.error('Some DOM elements are missing');
         return;
     }
@@ -1294,33 +1295,38 @@ function updateScoringDisplay() {
     noiseScoreEl.textContent = Math.round(noiseScore);
     
     // Update threat level and recommendation
-    let status, badgeClass, alertClass, recommendation;
+    let status, badgeClass, alertClass, recommendation, detail;
     
     if (finalScore > 80) {
         status = 'CRITICAL';
         badgeClass = 'bg-dark';
         alertClass = 'alert-danger';
-        recommendation = 'Emergency response required';
+        recommendation = '🚨 Emergency response required';
+        detail = 'Immediate evacuation and emergency services activation needed';
     } else if (finalScore > 60) {
         status = 'HIGH';
         badgeClass = 'bg-danger';
-        alertClass = 'alert-warning';
-        recommendation = 'Investigate immediately';
+        alertClass = 'alert-danger';
+        recommendation = '⚠️ Investigate immediately';
+        detail = 'Security personnel should investigate the area immediately';
     } else if (finalScore > 40) {
         status = 'ELEVATED';
         badgeClass = 'bg-warning';
         alertClass = 'alert-warning';
-        recommendation = 'Increased attention required';
+        recommendation = '🔍 Increased attention required';
+        detail = 'Monitor situation closely and prepare for escalation';
     } else if (finalScore > 20) {
         status = 'MODERATE';
         badgeClass = 'bg-info';
         alertClass = 'alert-info';
-        recommendation = 'Monitor closely';
+        recommendation = '👀 Monitor closely';
+        detail = 'Elevated awareness needed, continue monitoring';
     } else {
         status = 'LOW';
         badgeClass = 'bg-success';
         alertClass = 'alert-success';
-        recommendation = 'Normal monitoring';
+        recommendation = '✅ Normal monitoring';
+        detail = 'All parameters within normal operating ranges';
     }
     
     // Update UI elements
@@ -1328,6 +1334,7 @@ function updateScoringDisplay() {
     threatBadgeEl.className = `badge ${badgeClass}`;
     recommendationBoxEl.className = `alert ${alertClass}`;
     recommendationTextEl.textContent = recommendation;
+    recommendationDetailEl.textContent = detail;
     
     // Add animation effect
     const scoreElement = document.getElementById('threatScore');
