@@ -1301,31 +1301,31 @@ function updateScoringDisplay() {
         status = 'CRITICAL';
         badgeClass = 'bg-dark';
         alertClass = 'alert-danger';
-        recommendation = '🚨 Emergency response required';
+        recommendation = 'Emergency response required';
         detail = 'Immediate evacuation and emergency services activation needed';
     } else if (finalScore > 60) {
         status = 'HIGH';
         badgeClass = 'bg-danger';
         alertClass = 'alert-danger';
-        recommendation = '⚠️ Investigate immediately';
+        recommendation = 'Investigate immediately';
         detail = 'Security personnel should investigate the area immediately';
     } else if (finalScore > 40) {
         status = 'ELEVATED';
         badgeClass = 'bg-warning';
         alertClass = 'alert-warning';
-        recommendation = '🔍 Increased attention required';
+        recommendation = 'Increased attention required';
         detail = 'Monitor situation closely and prepare for escalation';
     } else if (finalScore > 20) {
         status = 'MODERATE';
         badgeClass = 'bg-info';
         alertClass = 'alert-info';
-        recommendation = '👀 Monitor closely';
+        recommendation = 'Monitor closely';
         detail = 'Elevated awareness needed, continue monitoring';
     } else {
         status = 'LOW';
         badgeClass = 'bg-success';
         alertClass = 'alert-success';
-        recommendation = '✅ Normal monitoring';
+        recommendation = 'Normal monitoring';
         detail = 'All parameters within normal operating ranges';
     }
     
