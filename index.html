@@ -37,6 +37,7 @@
                             <li><a class="dropdown-item" href="#api">API</a></li>
                             <li><a class="dropdown-item" href="#security">Security</a></li>
                             <li><a class="dropdown-item" href="#monitoring">Real-time</a></li>
+                            <li><a class="dropdown-item" href="#threat-levels">Threat Levels</a></li>
                             <li><a class="dropdown-item" href="#analytics">Analytics</a></li>
                             <li><a class="dropdown-item" href="#notifications">Notifications</a></li>
                             <li><a class="dropdown-item" href="#environments">Environments</a></li>
@@ -171,6 +172,7 @@
                         <li class="nav-item"><a class="nav-link" href="#api">API Endpoints</a></li>
                         <li class="nav-item"><a class="nav-link" href="#security">Security & Auth</a></li>
                         <li class="nav-item"><a class="nav-link" href="#monitoring">Real-time Monitoring</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#threat-levels">Threat Level Classifications</a></li>
                         <li class="nav-item"><a class="nav-link" href="#analytics">Analytics & Reporting</a></li>
                         <li class="nav-item"><a class="nav-link" href="#notifications">Notifications</a></li>
                         <li class="nav-item"><a class="nav-link" href="#environments">Multi-Environment</a></li>
@@ -1478,6 +1480,302 @@ def events_stream():
                                 <li>Visual indicators with color-coded status</li>
                                 <li>Quick switching with one-click environment focus</li>
                             </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Threat Level Classifications -->
+                <section id="threat-levels" class="content-section">
+                    <h2 class="section-title">Threat Level Classifications</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="mb-3">Overview of Threat Assessment Scale</h4>
+                            <p class="lead">SCOPE uses a comprehensive 0-100 numerical scale with 5 distinct threat levels for precise security assessment.</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="text-success">🔢 Numerical Scale: 0-100</h5>
+                                    <ul class="feature-list">
+                                        <li><strong>Granular Assessment:</strong> Precise numerical scoring for detailed analysis</li>
+                                        <li><strong>Component-Based:</strong> Multiple sensor inputs contribute to final score</li>
+                                        <li><strong>Weighted Calculation:</strong> Different threat factors have varying importance</li>
+                                        <li><strong>Confidence Scoring:</strong> 0-1 confidence level for reliability assessment</li>
+                                        <li><strong>Temporal Analysis:</strong> Trend tracking and predictive capabilities</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-primary">🎯 Classification System: 5 Levels</h5>
+                                    <ul class="feature-list">
+                                        <li><strong>Clear Categories:</strong> Easy-to-understand threat classifications</li>
+                                        <li><strong>Color-Coded:</strong> Visual indicators for immediate recognition</li>
+                                        <li><strong>Action-Oriented:</strong> Each level has specific response protocols</li>
+                                        <li><strong>Progressive Escalation:</strong> Logical progression from low to critical</li>
+                                        <li><strong>Standardized Response:</strong> Consistent procedures across all environments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="h5 mb-0">🟢 Level 1: LOW (0-20)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5 class="text-success">Normal Operating Conditions</h5>
+                                    <ul class="feature-list">
+                                        <li><strong>Score Range:</strong> 0-20 points</li>
+                                        <li><strong>Color Indicator:</strong> Green 🟢</li>
+                                        <li><strong>Visual Display:</strong> Normal, stable dashboard indicators</li>
+                                        <li><strong>Response Required:</strong> Routine monitoring only</li>
+                                        <li><strong>Alert Frequency:</strong> No automated alerts</li>
+                                    </ul>
+                                    
+                                    <h6>Typical Conditions:</h6>
+                                    <ul>
+                                        <li>Normal classroom/office activity</li>
+                                        <li>Standard occupancy levels</li>
+                                        <li>Environmental readings within normal ranges</li>
+                                        <li>No unusual behavioral patterns detected</li>
+                                        <li>All sensors operating normally</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="alert alert-success">
+                                        <h6>📊 Distribution: 45%</h6>
+                                        <p class="mb-0">Most common threat level in normal operations</p>
+                                    </div>
+                                    <div class="alert alert-info">
+                                        <h6>⏱️ Response Time: < 1 minute</h6>
+                                        <p class="mb-0">Routine monitoring checks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning text-white">
+                            <h3 class="h5 mb-0">🟡 Level 2: MODERATE (21-40)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5 class="text-warning">Elevated Awareness Required</h5>
+                                    <ul class="feature-list">
+                                        <li><strong>Score Range:</strong> 21-40 points</li>
+                                        <li><strong>Color Indicator:</strong> Yellow 🟡</li>
+                                        <li><strong>Visual Display:</strong> Cautious indicators with enhanced monitoring</li>
+                                        <li><strong>Response Required:</strong> Increased vigilance, periodic checks</li>
+                                        <li><strong>Alert Frequency:</strong> Informational notifications</li>
+                                    </ul>
+                                    
+                                    <h6>Typical Conditions:</h6>
+                                    <ul>
+                                        <li>Slightly elevated occupancy levels</li>
+                                        <li>Minor environmental anomalies</li>
+                                        <li>Unusual but non-threatening activity patterns</li>
+                                        <li>Borderline sensor readings</li>
+                                        <li>Transitory disturbances</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="alert alert-warning">
+                                        <h6>📊 Distribution: 25%</h6>
+                                        <p class="mb-0">Common during busy periods</p>
+                                    </div>
+                                    <div class="alert alert-info">
+                                        <h6>⏱️ Response Time: < 5 minutes</h6>
+                                        <p class="mb-0">Enhanced monitoring protocols</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h3 class="h5 mb-0">🟠 Level 3: ELEVATED (41-60)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5 class="text-info">Potential Threat Detected</h5>
+                                    <ul class="feature-list">
+                                        <li><strong>Score Range:</strong> 41-60 points</li>
+                                        <li><strong>Color Indicator:</strong> Orange 🟠</li>
+                                        <li><strong>Visual Display:</strong> Alert indicators with enhanced visibility</li>
+                                        <li><strong>Response Required:</strong> Active monitoring, prepared response</li>
+                                        <li><strong>Alert Frequency:</strong> Automated notifications to staff</li>
+                                    </ul>
+                                    
+                                    <h6>Typical Conditions:</h6>
+                                    <ul>
+                                        <li>Unusual crowd gatherings</li>
+                                        <li>Significant environmental changes</li>
+                                        <li>Suspicious behavioral patterns</li>
+                                        <li>Multiple sensor anomalies</li>
+                                        <li>Potential security concerns</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="alert alert-info">
+                                        <h6>📊 Distribution: 15%</h6>
+                                        <p class="mb-0">Requires immediate attention</p>
+                                    </div>
+                                    <div class="alert alert-warning">
+                                        <h6>⏱️ Response Time: < 2 minutes</h6>
+                                        <p class="mb-0">Active monitoring required</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger text-white">
+                            <h3 class="h5 mb-0">🔴 Level 4: HIGH (61-80)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5 class="text-danger">Active Threat Situation</h5>
+                                    <ul class="feature-list">
+                                        <li><strong>Score Range:</strong> 61-80 points</li>
+                                        <li><strong>Color Indicator:</strong> Red 🔴</li>
+                                        <li><strong>Visual Display:</strong> Critical alert indicators with pulsing animations</li>
+                                        <li><strong>Response Required:</strong> Immediate response, security protocols activated</li>
+                                        <li><strong>Alert Frequency:</strong> Critical alerts to all personnel</li>
+                                    </ul>
+                                    
+                                    <h6>Typical Conditions:</h6>
+                                    <ul>
+                                        <li>Confirmed security threats</li>
+                                        <li>Emergency medical situations</li>
+                                        <li>Severe environmental hazards</li>
+                                        <li>Aggressive behavior detected</li>
+                                        <li>System compromise or intrusion</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="alert alert-danger">
+                                        <h6>📊 Distribution: 10%</h6>
+                                        <p class="mb-0">Emergency response required</p>
+                                    </div>
+                                    <div class="alert alert-danger">
+                                        <h6>⏱️ Response Time: < 30 seconds</h6>
+                                        <p class="mb-0">Immediate action required</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-dark text-white">
+                            <h3 class="h5 mb-0">⚫ Level 5: CRITICAL (81-100)</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h5 class="text-dark">Severe Threat - Emergency</h5>
+                                    <ul class="feature-list">
+                                        <li><strong>Score Range:</strong> 81-100 points</li>
+                                        <li><strong>Color Indicator:</strong> Black ⚫</li>
+                                        <li><strong>Visual Display:</strong> Emergency indicators with maximum visibility</li>
+                                        <li><strong>Response Required:</strong> Emergency response, all-hands activation</li>
+                                        <li><strong>Alert Frequency:</strong> Emergency alerts to all channels</li>
+                                    </ul>
+                                    
+                                    <h6>Typical Conditions:</h6>
+                                    <ul>
+                                        <li>Active shooter or violent threat</li>
+                                        <li>Fire or major environmental disaster</li>
+                                        <li>Medical emergency with life-threatening conditions</li>
+                                        <li>Multiple simultaneous threats</li>
+                                        <li>System-wide security breach</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="alert alert-dark">
+                                        <h6>📊 Distribution: 5%</h6>
+                                        <p class="mb-0">Maximum emergency response</p>
+                                    </div>
+                                    <div class="alert alert-danger">
+                                        <h6>⏱️ Response Time: Immediate</h6>
+                                        <p class="mb-0">Emergency protocols activated</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="h5 mb-0">📈 Component Scoring Breakdown</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-primary">How Threat Scores Are Calculated</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Component Weights:</h6>
+                                    <ul class="feature-list">
+                                        <li><strong>Behavior Analysis:</strong> 30% (0-100 points)</li>
+                                        <li><strong>Proximity Assessment:</strong> 25% (0-100 points)</li>
+                                        <li><strong>Count/Density:</strong> 15% (0-100 points)</li>
+                                        <li><strong>Vital Signs:</strong> 15% (0-100 points)</li>
+                                        <li><strong>Air Quality:</strong> 15% (0-100 points)</li>
+                                        <li><strong>Noise Levels:</strong> 10% (0-100 points)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Calculation Formula:</h6>
+                                    <div class="code-block">
+                                        <pre><code class="language-python">overall_threat = (
+    behavior_score × 0.30 +
+    proximity_score × 0.25 +
+    count_score × 0.15 +
+    vital_signs_score × 0.15 +
+    air_quality_score × 0.15 +
+    noise_score × 0.10
+)</code></pre>
+                                    </div>
+                                    <p class="text-muted small">Final score: 0-100 points with confidence weighting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="h5 mb-0">🎯 Response Protocols by Level</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Monitoring Response:</h6>
+                                    <ul class="feature-list">
+                                        <li><strong>LOW:</strong> Routine automated monitoring</li>
+                                        <li><strong>MODERATE:</strong> Enhanced monitoring with periodic checks</li>
+                                        <li><strong>ELEVATED:</strong> Active monitoring with staff notifications</li>
+                                        <li><strong>HIGH:</strong> Continuous monitoring with security alert</li>
+                                        <li><strong>CRITICAL:</strong> Emergency monitoring with all-hands alert</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Notification Channels:</h6>
+                                    <ul class="feature-list">
+                                        <li><strong>LOW:</strong> Dashboard display only</li>
+                                        <li><strong>MODERATE:</strong> Email notifications to staff</li>
+                                        <li><strong>ELEVATED:</strong> SMS and email alerts</li>
+                                        <li><strong>HIGH:</strong> Teams, email, and SMS alerts</li>
+                                        <li><strong>CRITICAL:</strong> All channels including emergency services</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
