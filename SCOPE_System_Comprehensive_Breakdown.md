@@ -3562,26 +3562,27 @@ def stop_scenario():
     <div class="scenario-status">
         {% if active_scenario %}
         <div class="alert alert-warning">
-            <strong>Active Scenario:</strong> {{ active_scenario.name }}
+            <strong>Active Scenario:</strong> {% raw %}{{ active_scenario.name }}{% endraw %}
             <button class="btn btn-sm btn-danger" onclick="stopScenario()">
                 <i class="bi bi-stop-circle"></i> Stop
             </button>
         </div>
-        {% else %}
+        {% raw %}{% else %}{% endraw %}
         <div class="alert alert-info">
             No scenario active - Select a scenario below
         </div>
-        {% endif %}
+        {% raw %}{% endif %}{% endraw %}
     </div>
     
     <div class="scenario-grid">
-        {% for scenario_id, scenario in scenarios.items() %}
-        <div class="scenario-card" onclick="activateScenario('{{ scenario_id }}')">
-            <h6>{{ scenario.name }}</h6>
-            <p>{{ scenario.description }}</p>
-            <div class="scenario-threat">Threat: {{ scenario.threatScore }}/100</div>
+        <!-- Jinja2 template syntax for Flask -->
+        {% raw %}{% for scenario_id, scenario in scenarios.items() %}{% endraw %}
+        <div class="scenario-card" onclick="activateScenario('{% raw %}{{ scenario_id }}{% endraw %}')">
+            <h6>{% raw %}{{ scenario.name }}{% endraw %}</h6>
+            <p>{% raw %}{{ scenario.description }}{% endraw %}</p>
+            <div class="scenario-threat">Threat: {% raw %}{{ scenario.threatScore }}{% endraw %}/100</div>
         </div>
-        {% endfor %}
+        {% raw %}{% endfor %}{% endraw %}
     </div>
 </div>
 ```
