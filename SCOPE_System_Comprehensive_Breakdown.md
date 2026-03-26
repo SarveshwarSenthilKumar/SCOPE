@@ -3560,7 +3560,7 @@ def stop_scenario():
     <h5>Scenario Simulation</h5>
     
     <div class="scenario-status">
-        {% if active_scenario %}
+        {% raw %}{% if active_scenario %}{% endraw %}
         <div class="alert alert-warning">
             <strong>Active Scenario:</strong> {% raw %}{{ active_scenario.name }}{% endraw %}
             <button class="btn btn-sm btn-danger" onclick="stopScenario()">
