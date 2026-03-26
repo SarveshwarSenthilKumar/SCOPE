@@ -3056,21 +3056,22 @@ def update_environment_data(self, data, environment_id=None):
 <div class="environment-switcher">
     <h6>Environment Monitor</h6>
     <div id="environmentList">
-        {% for env_id, env_data in environments.items() %}
-        <div class="environment-item {% if env_id == current_environment %}active{% endif %}"
-             data-env-id="{{ env_id }}" onclick="switchEnvironment('{{ env_id }}')">
-            <div class="environment-icon" style="background-color: {{ env_data.color }}">
-                <i class="bi {{ env_data.icon }}"></i>
+        <!-- Jinja2 template syntax for Flask -->
+        {% raw %}{% for env_id, env_data in environments.items() %}{% endraw %}
+        <div class="environment-item {% raw %}{% if env_id == current_environment %}active{% endif %}{% endraw %}"
+             data-env-id="{% raw %}{{ env_id }}{% endraw %}" onclick="switchEnvironment('{% raw %}{{ env_id }}{% endraw %}')">
+            <div class="environment-icon" style="background-color: {% raw %}{{ env_data.color }}{% endraw %}">
+                <i class="bi {% raw %}{{ env_data.icon }}{% endraw %}"></i>
             </div>
             <div class="environment-info">
-                <div class="environment-name">{{ env_data.name }}</div>
-                <div class="environment-desc">{{ env_data.description }}</div>
+                <div class="environment-name">{% raw %}{{ env_data.name }}{% endraw %}</div>
+                <div class="environment-desc">{% raw %}{{ env_data.description }}{% endraw %}</div>
             </div>
-            <div class="threat-badge threat-{{ env_data.data.threat.level|lower }}">
-                {{ env_data.threat_score|round|int }}%
+            <div class="threat-badge threat-{% raw %}{{ env_data.data.threat.level|lower }}{% endraw %}">
+                {% raw %}{{ env_data.threat_score|round|int }}{% endraw %}%
             </div>
         </div>
-        {% endfor %}
+        {% raw %}{% endfor %}{% endraw %}
     </div>
 </div>
 ```
