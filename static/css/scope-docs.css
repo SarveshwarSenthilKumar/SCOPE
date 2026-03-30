@@ -2007,6 +2007,164 @@ body.dark-mode .close-btn:hover {
     animation: buttonPulse 2s infinite;
 }
 
+/* IEEE Award Section Styles */
+.award-icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.award-icon-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: awardGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes awardGlow {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.8); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+.award-badge-glow {
+    position: relative;
+    display: inline-block;
+}
+
+.award-badge-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #fff, #f0f0f0, #fff);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    animation: badgeShine 3s linear infinite;
+    z-index: -1;
+}
+
+@keyframes badgeShine {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.award-badge-modern {
+    position: relative;
+    display: inline-block;
+}
+
+.award-badge-modern::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+    border-radius: 1rem;
+    z-index: -1;
+    animation: gradientRotate 4s ease-in-out infinite;
+}
+
+@keyframes gradientRotate {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+}
+
+/* Award Section Hover Effects */
+.award-badge-modern .badge:hover {
+    transform: translateY(-2px) scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Readability for Award Sections */
+.bg-gradient {
+    position: relative;
+}
+
+.bg-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    z-index: 1;
+}
+
+.bg-gradient > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Award Section Text Enhancements */
+.text-white.fw-bold {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-warning.fw-bold {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Award Card Animations */
+.card[style*="gradient"] {
+    position: relative;
+    overflow: hidden;
+}
+
+.card[style*="gradient"]::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: cardShine 4s linear infinite;
+}
+
+@keyframes cardShine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* Award List Item Enhancements */
+.feature-list li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.feature-list li::before {
+    content: '⭐';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffc107;
+    font-size: 1rem;
+}
+
+/* Award Badge Responsive Design */
+@media (max-width: 768px) {
+    .award-badge-glow,
+    .award-badge-modern {
+        transform: scale(0.9);
+    }
+    
+    .award-icon-wrapper {
+        transform: scale(0.8);
+    }
+}
+
 /* Print Optimizations */
 @media print {
     .back-to-top,
