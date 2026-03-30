@@ -8,6 +8,7 @@
   ![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)
   ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
   ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
+  ![Award](https://img.shields.io/badge/Award-IEEE%20Best%20Technical%20Award%20Winner%20at%20Engineering%20Idol-orange.svg)
   
   **Author:** Sarveshwar Senthil Kumar  
   **Repository:** [SarveshwarSenthilKumar/SCOPE](https://github.com/SarveshwarSenthilKumar/SCOPE)
