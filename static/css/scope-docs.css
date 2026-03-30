@@ -2283,6 +2283,41 @@ body.dark-mode .close-btn:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* IEEE Award Section - Enhanced Readability */
+#ieee-award .card[style*="gradient"] .text-white,
+#ieee-award .card[style*="gradient"] h1,
+#ieee-award .card[style*="gradient"] h2,
+#ieee-award .card[style*="gradient"] h3,
+#ieee-award .card[style*="gradient"] h4,
+#ieee-award .card[style*="gradient"] h5,
+#ieee-award .card[style*="gradient"] h6,
+#ieee-award .card[style*="gradient"] p,
+#ieee-award .card[style*="gradient"] li,
+#ieee-award .card[style*="gradient"] strong {
+    color: #2d3748 !important;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+#ieee-award .card[style*="gradient"] .text-primary {
+    color: #2b6cb0 !important;
+}
+
+#ieee-award .card[style*="gradient"] .text-success {
+    color: #2f855a !important;
+}
+
+#ieee-award .card[style*="gradient"] .text-info {
+    color: #2c5282 !important;
+}
+
+#ieee-award .card[style*="gradient"] .text-warning {
+    color: #d69e2e !important;
+}
+
+#ieee-award .card[style*="gradient"] .text-danger {
+    color: #c53030 !important;
+}
+
 /* Award Card Animations */
 .card[style*="gradient"] {
     position: relative;
