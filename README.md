@@ -2,7 +2,7 @@
   <img src="static/assets/logo.png" alt="SCOPE System" width="120" height="120">
   <h1>SCOPE System</h1>
   <p><strong>System for Comprehensive Observation and Protection of Environments</strong></p>
-  <p><em>Advanced environmental monitoring and threat detection system</em></p>
+  <p><em>(Award Winning) Advanced environmental monitoring and threat detection system</em></p>
   
   ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
   ![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)
